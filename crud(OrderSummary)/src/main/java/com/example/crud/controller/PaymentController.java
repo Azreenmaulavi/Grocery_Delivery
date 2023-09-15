@@ -13,7 +13,6 @@ import com.razorpay.RazorpayException;
 
 @RestController
 @RequestMapping("/pg")
-
 public class PaymentController {
 	private RazorpayClient client;
 	private static final String SECRET_ID = "rzp_test_n7W244AkHTngZH";
@@ -68,5 +67,6 @@ public class PaymentController {
 		options.put("payment_capture", 1); // You can enable this if you want to do Auto Capture.
 		return client.orders.create(options);
 	}
+
 
 }
