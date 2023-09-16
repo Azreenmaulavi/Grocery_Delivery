@@ -1,6 +1,7 @@
 package com.example.crud.controller;
 import java.math.BigInteger;
-import com.example.crud.entity.*;
+import com.example.crud.dto.OrderRequest;
+import com.example.crud.dto.OrderResponse;
 import org.json.JSONObject;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

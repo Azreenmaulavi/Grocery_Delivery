@@ -1,5 +1,8 @@
-package com.example.crud.entity;
+package com.example.crud.dto;
 import java.math.BigInteger;
+import lombok.Data;
+
+@Data
 public class OrderRequest {
 	String customerName;
 	String email;

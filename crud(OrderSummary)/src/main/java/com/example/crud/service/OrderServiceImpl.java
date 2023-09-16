@@ -30,4 +30,10 @@ public class OrderServiceImpl implements OrderService {
    this.orderDao.save(order);		
  }
 
+@Override
+public OrderProduct create(OrderProduct orderProduct) {
+	// TODO Auto-generated method stub
+	return null;
+}
+
 }

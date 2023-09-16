@@ -1,5 +1,7 @@
-package com.example.crud.entity;
+package com.example.crud.dto;
+import lombok.Data;
 
+@Data
 public class OrderResponse {
 	String secretKey;
 	String razorpayOrderId;
