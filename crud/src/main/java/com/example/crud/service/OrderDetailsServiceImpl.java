@@ -20,10 +20,10 @@ public class OrderDetailsServiceImpl {
 		List<OrderProductQuantity> productQuantityList=orderInput.getOrderProductQuantityList();
 		
 		for(OrderProductQuantity o: productQuantityList) {
-			Product product=productRepository.findById(o.getProductId()).get();
+			Product product=((Object) productRepository.findById(o.getProductId())).get();
 			
 			OrderDetails orderDetail=new OrderDetails(orderInput.getFullName(),orderInput.getFullAddress(),orderInput.getContactNumber(),orderInput.getAlternateContact(),
-					ORDER_PLACED, orderAmount:100.09,product,);
+					ORDER_PLACED, OrderDetails.orderAmount:100.09,product,);
 		}
 		
 	}
